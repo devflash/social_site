@@ -1,0 +1,24 @@
+.wrapper
+{
+	margin-top:20px;
+	display: flex;
+	justify-content: center;
+}
+.#grouplist
+{
+	 width:90%;
+    border:1px solid black;
+    height:100%;
+    border-radius: 5px;
+	
+}
+
+#error
+{
+	 width:90%;
+    border:1px solid red;
+    height:100%;
+    border-radius: 5px;
+    color:red;
+    text-align: center;
+}

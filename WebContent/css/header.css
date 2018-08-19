@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+*
+{
+    margin:0;
+    padding:0;
+}
+.header
+{
+    display: grid;
+    grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
+    background-color: #2980b9;
+    color:#fff;
+    padding:20px 5px;
+}
+h3
+{
+    font-size: 1.5em;
+    font-family: Dosis;
+}
+.nav
+{
+    justify-self: flex-end;
+}
+.nav ul
+{
+    list-style: none;
+
+ 
+}
+.nav ul li
+{
+    float:left;
+    padding-right: 10px;
+    
+}
+.nav ul li a
+{
+    color:#fff;
+    text-decoration:none;
+    font-size: 1.5em;
+}

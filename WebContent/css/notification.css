@@ -1,0 +1,122 @@
+@charset "ISO-8859-1";
+*,::before
+{
+	box-sizing: border-box;
+}
+
+.cards-wrapper
+{
+	
+}
+.eachCard
+{
+	width:60%;
+	margin:10px auto;
+	border-bottom: 1px solid #95a5a6; 
+	padding-bottom: 72px;
+}
+.eachCard a
+{
+	float:right;
+	margin-right: 15px;
+	background: #0984e3;
+	padding:20px;
+	border-radius: 10px;
+	border:2px solid #fff;
+	color:#fff;
+	text-decoration: none;
+	font-size: 1.2em;
+	display:inline-block;
+	
+}
+
+
+
+.card
+{
+	width:500px;
+	height:294px;
+	border:1px solid black;
+	margin:10px auto;
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	grid-template-areas:"header header"
+						"img info";
+	z-index:-2;
+	position:relative;
+	border-radius:10px;
+	background: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow:10px 10px 25px 1px rgba(0,0,0,.75);
+}
+.card span
+{
+	border-bottom: 1px solid #fff;
+	margin-bottom: 5px;
+}
+
+
+.card img
+{
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	border:3px solid #fff;
+
+}
+
+.img
+{
+	align-self:center;
+	justify-self:center;
+	grid-area:img;
+	position: absolute;
+	bottom:113px;
+	
+
+}
+.info
+{
+	align-self:center;
+	justify-self:center;
+	grid-area:info;
+	color:#fff;
+}
+.info p
+{
+	margin-bottom: 2px;
+}
+
+.group-header
+{
+	align-self:center;
+	grid-area:header;
+	
+	display:flex;
+	
+	border-radius:10px;
+}
+.group-header h2
+{
+	
+	font-size:2.5em;
+	background: yellow;
+	width:100%;
+	position: absolute;
+	top:10px;
+	left:20px;
+	text-align: right;
+	padding-right:26px;
+		
+}
+.error
+{
+	border:2px solid red;
+	border-radius: 5px;
+	padding:20px;
+	margin:10px auto;
+	color:red;
+	width:50%;
+	text-align: center;
+}

@@ -1,0 +1,100 @@
+@charset "ISO-8859-1";
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height:500px;
+}
+.add
+{
+    width:90%;
+    border:1px solid black;
+    height:100%;
+    border-radius: 5px;
+
+}
+.post-form
+{
+    padding-left: 10px;
+}
+.title
+{
+    background-color: lightblue;
+    padding:20px 0px;
+    color:#fff;
+    font-size:1.7em;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+label
+{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+input
+{
+    width:90%;
+    border-radius: 5px;
+    outline: none;
+    border:0.5px solid black;
+    margin-bottom: 20px;
+    height:34px;
+    padding:0px 5px;
+
+}
+select
+{
+	width:90%;
+    border-radius: 5px;
+    outline: none;
+    border:0.5px solid black;
+    margin-bottom: 20px;
+    height:34px;
+    padding:0px 5px;
+	
+}
+textarea
+{
+    width:90%;
+    border:0.5px solid black;
+    height:100px;
+    pzdding:0px 5px;
+    
+}
+.btn
+{
+    margin-top:10px;
+    width:103px;
+}
+.postBtn
+{
+    text-align: center;
+}
+@media(min-width:700px)
+{
+    .add
+    {
+        width:70%;
+    }
+    .post-form
+    {
+        display: grid;
+        grid-template-columns: 30% auto;
+    
+        grid-row-gap: 30px;
+    }
+    .postBtn
+    {
+        grid-column-start: 2;
+    }
+    .
+}
+@media(min-width:1500px)
+{
+    .add
+    {
+        width:50%;
+    }
+}

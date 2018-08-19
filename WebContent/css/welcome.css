@@ -1,0 +1,169 @@
+@charset "ISO-8859-1";
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.header
+{
+    background-color: #2980b9;
+    color:#fff;
+    display:grid;
+    grid-template-columns: 80% 20%;
+    grid-area:header;
+}
+.site-title
+{
+    font-family: Dosis,sans-serif;
+    padding:20px;
+    font-size: 1.5em;
+}
+.hamburger-menu
+{
+    justify-self: flex-end;
+    align-self: center;
+}
+.hamburger-menu:hover
+{
+    cursor:pointer;
+}
+span
+{
+    content: "";
+    background-color:#fff;
+    width:25px;
+    height:5px;
+    display:block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+
+}
+.list
+{
+    background-color: #bdc3c7;
+    
+    grid-area:list;
+}
+
+.list li
+{
+    
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+.user_post
+{
+	grid-area:user_post;
+}
+.list li a
+{
+    color:#2980b9;
+    font-size: 1.2em;
+    display:block;
+    padding:20px 0px;
+}
+.list li a:hover
+{
+    background-color: #7f8c8d;
+    color:#fff;
+}
+.profile
+{
+    grid-area:profile;
+ 	padding-top:5px;   
+    text-align: center;
+    background-color: #3498db;
+    color:#fff;
+}
+.profile img
+{
+    height:150px;
+    width:150px;
+    border:2px solid #fff;
+    border-radius:50%;
+}
+.post
+{
+    grid-area:post;
+    border:1px solid black;
+    margin:10px 5px 10px 5px;
+    border-radius:5px;
+    padding:10px;
+    box-shadow: 5px 5px 1px #666;
+    
+}
+.post img
+{
+    width:100%;
+}
+.icons
+{
+    margin:10px 0px;
+    font-size: 35px;
+    text-align: end;
+    
+}
+.far
+{
+margin-right:20px;
+}
+.far:hover
+{
+    cursor: pointer;
+}
+.footer
+{
+    grid-area: footer;
+    background-color: black;
+    text-align: center;
+    color:#fff;
+    font-size: 1.5em;
+}
+
+@media(min-width:1024px)
+{
+    .wrapper
+    {
+        display:grid;
+        grid-template-columns: 20% 40% 20% 20%;
+        grid-template-rows:81px 225px auto 43px; 
+        grid-template-areas: "header list list list"
+                            "profile profile profile profile"
+                            ". user_post user_post ."
+                            
+                            "footer footer footer footer";
+    }
+    .hamburger-menu
+    {
+        display:none;
+    }
+    .list
+    {
+    background-color: #2980b9;
+    
+    grid-area:list;
+    }
+    .list ul
+    {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+    }
+    .list ul li
+    {
+        flex-grow: 1;
+        border:none;
+    }
+    .list li a  
+    {
+    color:#fff;;
+    font-size: 1.2em;
+    }
+    .list li a:hover
+	{
+    background-color: #2980b9;
+    color:#fff;
+
+	}
+}
